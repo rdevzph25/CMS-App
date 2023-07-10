@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:id="@+id/coordinator"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+       
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+		<com.google.android.material.bottomappbar.BottomAppBar
+            android:visibility="gone"
+			android:id="@+id/bottomappbar"
+			android:layout_width="match_parent"
+			android:layout_height="72dp"
+			app:backgroundTint="@color/colorPrimaryDark"
+			app:fabCradleMargin="5dp"
+			app:fabCradleRoundedCornerRadius="0dp"
+			android:layout_gravity="bottom">
+
+			<com.google.android.material.bottomnavigation.BottomNavigationView
+				android:id="@+id/bottomnavigationbar"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginRight="16dp"
+				android:background="@android:color/transparent"
+				app:itemIconTint="@android:color/white"
+				app:itemTextColor="@android:color/white"
+				app:menu="@menu/nav_menu" />
+
+		</com.google.android.material.bottomappbar.BottomAppBar>
+
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:visibility="gone"
+			android:id="@+id/add_complaint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_message_plus"
+            app:tint="@android:color/white"
+			app:layout_anchor="@id/bottomappbar" />
+
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
+
+
+
+

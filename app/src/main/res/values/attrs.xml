@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ShowHidePasswordEditText">
+        <attr name="drawable_hide" format="integer"/>
+        <attr name="drawable_show" format="integer"/>
+        <attr name="tint_color" format="color"/>
+        <attr name="additionalTouchTargetSize" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+	<declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MyCircleView">
+
+        <attr name="cub_color" format="color"/>
+        <attr name="cub_hover_color" format="color"/>
+        <attr name="cub_border_color" format="color"/>
+        <attr name="cub_icon" format="integer"/>
+        <attr name="cub_border_radius" format="dimension" />
+        <attr name="cub_fontstyle" format="string"/>
+        <attr name="cub_riple_effect" format="boolean"></attr>
+
+    </declare-styleable>
+	
+	<declare-styleable name="FilePickerPreference">
+		
+        <attr name="selection_mode" format="enum">
+            <enum name="single_mode" value="0"/>
+            <enum name="multi_mode" value="1"/>
+        </attr>
+        <attr name="selection_type" format="enum">
+            <enum name="file_select" value="0"/>
+            <enum name="dir_select" value="1"/>
+            <enum name="file_dir_select" value="2"/>
+        </attr>
+
+        <attr
+            name="root_dir"
+            format="string"/>
+
+        <attr
+            name="error_dir"
+            format="string"/>
+
+        <attr
+            name="offset_dir"
+            format="string"/>
+
+        <attr
+            name="extensions"
+            format="string"/>
+
+        <attr
+            name="title_text"
+            format="string"/>
+
+    </declare-styleable>
+    
+    <declare-styleable name="DataGraph">
+        <attr name="dg_colorDown" format="color" />
+        <attr name="dg_colorUp" format="color" />
+        <attr name="dg_colorText" format="color" />
+    </declare-styleable>
+	
+	<declare-styleable name="SVGImageView">
+        <!-- Location of the SVG document. -->
+        <attr name="svg" format="reference|string"/>
+        <attr name="css" format="string"/>
+    </declare-styleable>
+	
+	<attr name="mwhWaves" format="string|enum">
+        <enum name="MultiWave" value="-1"/>
+        <enum name="PairWave" value="-2"/>
+    </attr>
+    <attr name="mwhShape" format="enum">
+        <enum name="Rect" value="0"/>
+        <enum name="RoundRect" value="1"/>
+        <enum name="Oval" value="2"/>
+    </attr>
+    <declare-styleable name="MultiWaveHeader">
+        <attr name="mwhWaveHeight" format="dimension"/>
+        <attr name="mwhStartColor" format="color"/>
+        <attr name="mwhCloseColor" format="color"/>
+        <attr name="mwhIsRunning" format="boolean"/>
+        <attr name="mwhEnableFullScreen" format="boolean"/>
+        <attr name="mwhColorAlpha" format="fraction|float"/>
+        <attr name="mwhProgress" format="fraction|float"/>
+        <attr name="mwhVelocity" format="fraction|float"/>
+        <attr name="mwhGradientAngle" format="integer"/>
+        <attr name="mwhCornerRadius" format="dimension"/>
+        <attr name="mwhWaves"/>
+        <attr name="mwhShape"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+	
+</resources>
